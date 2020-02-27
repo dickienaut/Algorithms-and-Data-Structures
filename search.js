@@ -1,29 +1,33 @@
-// Iterating through Arrays
+// Search
 
 const arr = [1,2,3]
 
-// for(let i=0; i < arr.length; i++) {
-//   console.log(arr[i])
-// }
-//
-//
-// for(let idx in arr) {
-//   console.log(arr[idx])
-// }
-//
-//
-// for(let el of arr) {
-//   console.log(el)
-// }
-//
-//
-// arr.forEach((el, idx) => {
-//   console.log(el)
-// })
-//
-//
-// arr.forEach((el, idx) => {
-//   console.log(arr[idx])
-// })
 
 // Linear search
+
+const linearSearch = (arr, n) => {
+  for(let i=0; i<arr.length; i++) {
+    if(arr[i] == n) {
+      console.log('Found in array')
+      return true
+    }
+  }
+  console.log('Not found in array')
+  return false
+}
+
+linearSearch(arr, 3)
+
+
+const linearSearch2 = (arr, n) => {
+  for(el in arr){
+    if(el == n){
+      console.log('Found in array')
+      return true
+    }
+  }
+  console.log('Not found in array')
+  return false
+}
+
+linearSearch2(arr, 4)
