@@ -20,8 +20,6 @@ const linearSearch = (arr, n) => {
 linearSearch(arr, 3)
 
 
-
-
 // Binary Search O(log n)
 
 const binarySearch = (arr, n) => {
@@ -46,6 +44,5 @@ const binarySearch = (arr, n) => {
   console.log('Not found')
   return -1
 }
-
 
 binarySearch(arr, 2)
