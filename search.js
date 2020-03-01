@@ -17,7 +17,7 @@ const linearSearch = (arr, n) => {
   return false
 }
 
-linearSearch(arr, 3)
+// linearSearch(arr, 3)
 
 
 // Binary Search O(log n)
@@ -45,4 +45,4 @@ const binarySearch = (arr, n) => {
   return -1
 }
 
-binarySearch(arr, 2)
+// binarySearch(arr, 2)
