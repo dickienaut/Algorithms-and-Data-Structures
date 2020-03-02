@@ -46,3 +46,27 @@ const binarySearch = (arr, n) => {
 }
 
 // binarySearch(arr, 2)
+
+
+const binarySearch2 = (arr, n) => {
+  console.log('Binary Search')
+  arr.sort((a, b) => {
+    return (+a) - (+b)
+  })
+  let lowIndex = 0, highIndex = arr.length -1, midIndex
+  while(lowIndex <= highIndex) {
+    midIndex = Math.floor((lowIndex + highIndex) / 2)
+    if(n == arr[midIndex]) {
+      console.log('Found it', n, arr[midIndex])
+      return true
+    } else if(n > arr[midIndex]) {
+      lowIndex = midIndex + 1
+    } else {
+      highIndex = midIndex - 1
+    }
+  }
+  console.log('Not found in array')
+  return -1
+}
+
+binarySearch2(arr, 0)
